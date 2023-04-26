@@ -71,17 +71,17 @@
           <h2>Новая привычка</h2>
           <div class="icon-lable">Иконка</div>
           <div class="icon-select">
-            <button class="icon icon_active" onclick="setIcon('sport')">
+            <button class="icon icon_active" onclick="setIcon(this, 'sport')">
               <img src="./images/sport.png" alt="sport" />
             </button>
-            <button class="icon" onclick="setIcon('sport')">
+            <button class="icon" onclick="setIcon(this,'food')">
               <img src="./images/food.png" alt="food" />
             </button>
-            <button class="icon" onclick="setIcon('sport')">
+            <button class="icon" onclick="setIcon(this,'water')">
               <img src="./images/water.png" alt="water" />
             </button>
           </div>
-          <form class="popup__form">
+          <form class="popup__form" onsubmit="addHabbit(event)">
             <input type="text" name="name" placeholder="Название" />
             <input
               type="text"
